@@ -209,21 +209,6 @@
       <button class="show-more-btn" type="button">Show More</button>
     </div>
      <div id="footer" style="margin-top: 104px;"></div>
-     <script>
-    // Tải header
-    fetch("header.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("header").innerHTML = data;
-      });
-
-    // Tải footer
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer").innerHTML = data;
-      });
-  </script>
    <script src="../js/hidden_car.js" defer></script>
    <script src="../js/scroll.js"></script>
 </body>

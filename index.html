@@ -277,21 +277,6 @@
           <h2 class="end-page">2023 furino. All rights reverved</h2>
   </footer> -->
   <div id="footer"></div>
-   <script>
-    // Nhúng header
-    fetch("orther-pages/header.html") //Yêu cầu tải header  
-      .then(res => res.text())// trả về respone -> Chuỗi
-      .then(data => {
-        document.getElementById("header").innerHTML = data;
-      });
-
-    // Tải footer
-    fetch("orther-pages/footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer").innerHTML = data;
-      });
-  </script>
   <script>
   fetch('https://689ebc7b3fed484cf877d4c3.mockapi.io/api/product/List_Product')
   .then(res => res.json())

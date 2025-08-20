@@ -1,14 +1,27 @@
+ // Load header
+  fetch("orther-pages/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
 
-    // Gắn sự kiện sau khi header đã load
-    const cartBtn = document.getElementById('cartBtn');
-    const cartSidebar = document.getElementById('cartSidebar');
-    const closeCart = document.getElementById('closeCart');
+      // Gắn sự kiện sau khi header đã được chèn
+      const cartBtn = document.getElementById('cartBtn');
+      const cartSidebar = document.getElementById('cartSidebar');
+      const closeCart = document.getElementById('closeCart');
 
-    if (cartBtn && cartSidebar && closeCart) {
+      if (cartBtn && cartSidebar && closeCart) {
         cartBtn.addEventListener('click', () => {
-            cartSidebar.classList.add('active');
+          cartSidebar.classList.add('active');
         });
         closeCart.addEventListener('click', () => {
-            cartSidebar.classList.remove('active');
+          cartSidebar.classList.remove('active');
         });
-    }
+      }
+    });
+
+  // Load footer
+  fetch("orther-pages/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
