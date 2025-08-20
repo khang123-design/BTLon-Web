@@ -15,7 +15,31 @@
 
 <body>
   
-     <div id="header"></div>
+     <header>
+        <div class="Logo">
+            <img src="image/Furino.png" id="Logo">
+            <p><b>Furino</b></p>
+        </div>
+         <div class="nav-links">
+          <!-- <a href="/index.html">Home</a>
+          <a  href="/orther-pages/Shop.html">Shop</a>
+          <a href="/orther-pages/Detail_Product.html">About</a>
+          <a href="#">Contact</a> -->
+          <a href="https://khang123-design.github.io/BTLon-Web/index.html">Home</a>
+            <a href="https://khang123-design.github.io/BTLon-Web/orther-pages/Shop.html">Shop</a>
+            <a href="https://khang123-design.github.io/BTLon-Web/orther-pages/Detail_Product.html">About</a>
+            <a href="#">Contact</a>
+
+        </div>
+       <div class="nav-icons" aria-label="User actions">
+          <span aria-label="User account" role="button" tabindex="0"><i class="fas fa-user"></i></span>
+          <span aria-label="Search" role="button" tabindex="0"><i class="fas fa-search"></i></span>
+          <span aria-label="Wishlist" role="button" tabindex="0"><i class="fas fa-heart"></i></span>
+          <span id="cartBtn" aria-label="Cart" role="button" tabindex="0"><i class="fas fa-shopping-cart"></i></span>
+
+           <!-- <a id="cartBtn" aria-label="Cart" href="#">Contact</a> -->
+        </div>
+    </header>
     <!-- ----------------------------- -->
      <section class="hero" aria-label="New collection hero section">
     <div class="hero-image">
@@ -278,12 +302,6 @@
   </footer> -->
   <div id="footer"></div>
    <script>
-    // Load header
-  fetch("orther-pages/header.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("header").innerHTML = data;
-    });
   // Load footer
   fetch("orther-pages/footer.html")
     .then(res => res.text())
