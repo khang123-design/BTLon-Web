@@ -1,9 +1,4 @@
  // Load header
-  fetch("../orther-pages/header.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("header").innerHTML = data;
-
       // Gắn sự kiện sau khi header đã được chèn
       const cartBtn = document.getElementById('cartBtn');
       const cartSidebar = document.getElementById('cartSidebar');
@@ -17,11 +12,3 @@
           cartSidebar.classList.remove('active');
         });
       }
-    });
-
-  // Load footer
-  fetch("../orther-pages/footer.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("footer").innerHTML = data;
-    });
