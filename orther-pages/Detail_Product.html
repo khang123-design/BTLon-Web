@@ -209,14 +209,14 @@
       <button class="show-more-btn" type="button">Show More</button>
     </div>
      <div id="footer" style="margin-top: 104px;"></div>
-     <script>
-    // Tải header
-    fetch("header.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("header").innerHTML = data;
-      });
-     // Gắn sự kiện sau khi header đã được chèn
+    <script>
+  // Tải header
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+
+      // Gắn sự kiện sau khi header đã được chèn
       const cartBtn = document.getElementById('cartBtn');
       const cartSidebar = document.getElementById('cartSidebar');
       const closeCart = document.getElementById('closeCart');
@@ -228,15 +228,17 @@
         closeCart.addEventListener('click', () => {
           cartSidebar.classList.remove('active');
         });
-      }  
+      }
+    });
 
-    // Tải footer
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer").innerHTML = data;
-      });
-  </script>
+  // Tải footer
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
    <!-- <script src="../js/hidden_car.js" defer></script> -->
    <script src="../js/scroll.js"></script>
 </body>
