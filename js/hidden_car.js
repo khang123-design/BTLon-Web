@@ -1,4 +1,4 @@
- // Load header
+
       // Gắn sự kiện sau khi header đã được chèn
       const cartBtn = document.getElementById('cartBtn');
       const cartSidebar = document.getElementById('cartSidebar');
