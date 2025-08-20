@@ -1,5 +1,5 @@
  // Load header
-  fetch("orther-pages/header.html")
+  fetch("../orther-pages/header.html")
     .then(res => res.text())
     .then(data => {
       document.getElementById("header").innerHTML = data;
@@ -20,7 +20,7 @@
     });
 
   // Load footer
-  fetch("orther-pages/footer.html")
+  fetch("../orther-pages/footer.html")
     .then(res => res.text())
     .then(data => {
       document.getElementById("footer").innerHTML = data;
