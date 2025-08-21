@@ -1319,3 +1319,108 @@ div.cart_foot_buttons button
   font-size: 12px;
   font-weight: 400;
 }
+.content_contact {
+  max-width: 1058px;
+  margin: 0 auto;
+  padding: 60px 20px; /* thay height cố định */
+  background-color: white;
+}
+
+.content_contact_header {
+  text-align: center;
+  max-width: 644px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.content_contact_header h2 {
+  margin-bottom: 7px;
+  font-size: 36px;
+  font-weight: 600; 
+}
+
+.content_contact_header p {
+  font-size: 16px;
+  font-weight: 400; 
+  color: #9F9F9F;
+}
+
+.content_contact_body {
+  display: flex;
+  align-items: flex-start;
+  gap: 105px; /* khoảng cách 2 cột */
+  flex-wrap: wrap; /* responsive */
+  padding-top: 128px;
+  /* justify-content: center; */
+}
+
+.content_contact_body_left {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  max-width: 220px;
+  flex: 1;
+}
+
+.info-item {
+  display: flex;
+  gap: 30px;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-text p:first-child {
+  font-size: 24px;
+  font-weight: 500;
+}
+.info-text p:last-child
+{
+  font-size: 16px;
+  font-weight: 400;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 800px;
+  width: 100%;
+  flex: 2; 
+  height: auto; 
+}
+label {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0px;
+}
+.input_contact_form
+{
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 530px;
+  height: 75px;
+  box-sizing: border-box;
+}
+.textarea_contact {
+  resize: vertical;
+  min-height: 120px;
+} 
+.form_1
+{
+  display: flex;
+  gap: 22px;
+  flex-direction: column;
+}
+.contact-form-btn
+{
+    background-color: #B88E2F;
+    color:  white;
+    font-weight: 400;
+    width: 237px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+} 
