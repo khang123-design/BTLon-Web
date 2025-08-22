@@ -9,9 +9,9 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Logo - nav-links - icons chia đều */
+    justify-content: space-between;
     background-color: white;
-    padding: 10px 50px; /* thay vì left/top cứng */
+    padding: 10px 50px;
     position: relative;
 }
 
@@ -31,7 +31,7 @@ header {
 /* Navigation links */
 .nav-links {
     display: flex;
-    gap: 60px; /* khoảng cách giữa các link */
+    gap: 60px;
 }
 .nav-links a {
     text-decoration: none;
@@ -43,7 +43,7 @@ header {
 /* Icons */
 .nav-icons {
     display: flex;
-    gap: 30px; /* khoảng cách giữa các icon */
+    gap: 30px; 
 }
 .nav-icons > span {
     cursor: pointer;
@@ -64,13 +64,13 @@ header {
 /* Mobile: chuyển menu thành dọc */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;      /* header xếp dọc */
+    flex-direction: column;      
     align-items: flex-start;
     padding: 10px 20px;
   }
 
   .nav-links {
-    flex-direction: column;      /* link thành cột */
+    flex-direction: column;      
     gap: 15px;
     margin-top: 10px;
     width: 100%;
@@ -104,7 +104,7 @@ header {
 
     .hero {
   width: 100%;
-  min-height: 80vh; /* dùng viewport height thay cho px */
+  min-height: 80vh; 
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -123,8 +123,7 @@ header {
 .hero-text {
   background: #fff4db;
   border-radius: 8px;
-  max-width: 600px;   /* ❗giới hạn thay vì width cứng */
-  padding: 40px;      /* ❗thay cho height, top, left */
+  max-width: 600px;   
   padding-top: 62px;
 }
 
@@ -137,7 +136,7 @@ header {
 }
 
 .hero-text h2 {
-  font-size: 3rem;  /* thay px bằng rem */
+  font-size: 3rem;  
   margin: 0;
   color: #b87e1a;
 }
@@ -272,11 +271,10 @@ header {
      section.products-section
      {
         max-width:1236px;
-        /* height: 1084px; */
         margin: 0px auto;
         margin-top: 56px;
         background-color: white;
-        padding: 0 16px;     /* chừa khoảng cách 2 bên cho mobile */
+        padding: 0 16px;   
      }
      section.products-section h2
      {
@@ -333,7 +331,7 @@ header {
      }
      div.products .product
      {
-     width: calc(25% - 12px); /* bù lại khoảng gap để không tràn */
+     width: calc(25% - 12px); 
     margin-right: 0;
     position: relative;
      }
@@ -352,17 +350,17 @@ header {
       top: 24px;
       right: 24px;
       border-radius: 100%;
-      font-weight: 600;   /* Độ đậm*/
+      font-weight: 600;   
       font-size: 16px;
       color: white;
       user-select: none;
       width: 48px;
       height: 48px;
       text-align: center;
-      display: flex;              /* ✅ thêm */
-      align-items: center;        /* ✅ canh dọc */
-     justify-content: center;    /* ✅ canh ngang */
-     /* Biến một phần tử thành container có thể giúp canh dọc ngang */
+      display: flex;             
+      align-items: center;       
+     justify-content: center;    
+  
     }
     .badge.red {
       background-color: #E97171;
@@ -397,19 +395,19 @@ header {
    /* Responsive */
 @media (max-width: 1024px) {
   div.products .product {
-    width: calc(33.333% - 16px); /* tablet: 3 cột */
+    width: calc(33.333% - 16px); 
   }
 }
 
 @media (max-width: 768px) {
   div.products .product {
-    width: calc(50% - 16px); /* mobile ngang: 2 cột */
+    width: calc(50% - 16px); 
   }
 }
 
 @media (max-width: 480px) {
   div.products .product {
-    width: 100%; /* mobile nhỏ: 1 cột */
+    width: 100%; 
   }
 }
 
@@ -420,7 +418,7 @@ header {
       font-size: 40px;
       color: #3A3A3A;
       margin-top: 0px;
-    /* Không cho xuống dòng */
+    
     }
     .text-block p
     {
@@ -449,11 +447,10 @@ header {
     {
       display: flex;
      width: 100%;
-       max-width: 2000px; /* 👈 giới hạn chiều rộng */
+       max-width: 2000px; 
       position: relative;
       height: 670px;
-      overflow: hidden;     /* Để phần con ko bị tràn*/
-    }
+      overflow: hidden;    
     .slide img
     {
       width: 404px;
@@ -580,10 +577,10 @@ header {
     }
     .picture-setup-center
     {
-      max-width: 1500px;   /* giới hạn chiều rộng giống hero/footer */
+      max-width: 1500px;   
       width: 100%;
       height: 100%;
-      margin: 0 auto;      /* căn giữa khối này */
+      margin: 0 auto;      
     }
     .picture-setup p
     {
@@ -604,9 +601,9 @@ header {
     }
      .pt-setup
       {
-         position: relative; /* làm gốc cho các ảnh tuyệt đối */
+         position: relative; 
            
-         /* nếu ảnh tràn ra ngoài thì ẩn */
+     
       }
       .image1-setup
       {
@@ -670,12 +667,12 @@ header {
          left: -100px;  
       }
    .img-wrapper.right-crop {
-         width: 320px;         /* Chỉ hiển thị một phần của ảnh */
+         width: 320px;        
          height: 425px;
          overflow: hidden;
-         position: relative;   /* 🔁 Không dùng fixed */
-        margin-left: auto;    /* ✅ Đẩy sang phải */
-         margin-right: 0;      /* đảm bảo nằm trên các phần khác nếu cần */
+         position: relative;   
+        margin-left: auto;   
+         margin-right: 0;     
          margin-top: -365px;
    }
    .image8-setup
@@ -699,7 +696,7 @@ header {
    /* Tablet: <= 1024px */
 @media (max-width: 1024px) {
   .picture-setup {
-    height: auto; /* cho khối giãn theo ảnh */
+    height: auto; 
     padding: 20px 0;
   }
 
@@ -708,11 +705,11 @@ header {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
-    position: static; /* ❌ bỏ absolute parent */
+    position: static;
   }
 
   .pt-setup img {
-    position: static !important; /* ❌ bỏ absolute cho từng ảnh */
+    position: static !important; 
     width: 30%;   /* 3 cột */
     height: auto;
     margin: 0 !important;
@@ -1075,7 +1072,7 @@ header {
      font-size: 20px;
      padding-left: 30px;
    }
-   /* Desktop mặc định bạn đang xài absolute => giữ nguyên */
+   
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -1219,13 +1216,13 @@ header {
    /* Tablet: 2 cột */
 @media (max-width: 1024px) {
   section.Evaluate {
-    flex-wrap: wrap;   /* Cho phép xuống hàng */
-    height: auto;      /* Cho cao tự động theo nội dung */
+    flex-wrap: wrap;  
+    height: auto;     
     padding: 40px 20px;
     gap: 32px;
   }
   .Evaluate_item {
-    flex: 1 1 calc(50% - 32px); /* mỗi item chiếm 50% chiều ngang */
+    flex: 1 1 calc(50% - 32px); 
     justify-content: flex-start;
   }
 }
@@ -1299,7 +1296,7 @@ header {
 /* Mobile */
 @media (max-width: 768px) {
   .nav_Detail_Product {
-    flex-direction: column; /* Xếp dọc breadcrumb */
+    flex-direction: column; 
     align-items: flex-start;
     padding: 16px 20px;
     gap: 8px;
@@ -1313,7 +1310,7 @@ header {
     font-size: 16px;
   }
   .nav_line_detail_product {
-    display: none; /* Ẩn line dọc ở mobile để gọn hơn */
+    display: none;
   }
 }
    div.Detail_Prd
@@ -1323,7 +1320,7 @@ header {
     height: 820px;
     display: flex;
     gap: 105px;
-    /* justify-content: center; */
+    
    }
    .flex_Dt_Prd
    {
@@ -1507,7 +1504,7 @@ section.Detail_Product_info_Share
   align-items: center;
 }
 .Detail_sku_sofa_tag_share div:first-child {
-  min-width: 80px; /* cố định độ rộng cột 1 */
+  min-width: 80px; 
 }
 .Detail_share_icon img
 {
@@ -1609,7 +1606,7 @@ section.Detail_Product_Description
   }
 
   .Detail_Product_Description_head {
-    flex-direction: column; /* Tabs xuống hàng */
+    flex-direction: column; 
     gap: 16px;
   }
 
@@ -1629,7 +1626,7 @@ section.Detail_Product_Description
   }
 
   .Detail_Product_Description_image {
-    flex-direction: column; /* Hình ảnh xếp dọc */
+    flex-direction: column; 
     gap: 16px;
   }
 
@@ -1666,7 +1663,6 @@ section.Related_Products_Detail
     top: 0;
     right: -416px;
     width: 416px;
-    /* height: 746px; */
     height: 746px;
     background: white;
     box-shadow: -2px 0 5px rgba(0,0,0,0.2);
@@ -1760,7 +1756,6 @@ section.Related_Products_Detail
 .cart-body
 {
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
 }
 div.cart-item-name
@@ -1820,7 +1815,7 @@ div.cart_foot_buttons button
 .content_contact {
   max-width: 1058px;
   margin: 0 auto;
-  padding: 60px 20px; /* thay height cố định */
+  padding: 60px 20px; 
   background-color: white;
 }
 
@@ -1877,17 +1872,16 @@ div.cart_foot_buttons button
   .content_contact_header p {
     font-size: 14px;
     line-height: 1.6;
-    text-align: justify; /* để chữ không bị khó đọc */
+    text-align: justify; 
   }
 }
 
 .content_contact_body {
   display: flex;
   align-items: flex-start;
-  gap: 105px; /* khoảng cách 2 cột */
-  flex-wrap: wrap; /* responsive */
+  gap: 105px; 
+  flex-wrap: wrap; 
   padding-top: 128px;
-  /* justify-content: center; */
 }
 
 .content_contact_body_left {
@@ -1968,7 +1962,7 @@ label {
   }
 
   .input_contact_form {
-    width: 100%; /* Cho input full chiều rộng thay vì cố định 530px */
+    width: 100%; 
     height: 65px;
   }
 
@@ -2022,8 +2016,8 @@ label {
   }
 
   .contact-form-btn {
-    width: 100%; /* full chiều rộng để dễ bấm */
+    width: 100%; 
     height: 50px;
     font-size: 14px;
   }
-}
+  }
