@@ -11,7 +11,7 @@ header {
     align-items: center;
     justify-content: space-between; /* Logo - nav-links - icons chia đều */
     background-color: white;
-    padding: 10px 50px;
+    padding: 10px 50px; /* thay vì left/top cứng */
     position: relative;
 }
 
@@ -123,7 +123,8 @@ header {
 .hero-text {
   background: #fff4db;
   border-radius: 8px;
-  max-width: 600px;   
+  max-width: 600px;   /* ❗giới hạn thay vì width cứng */
+  padding: 40px;      /* ❗thay cho height, top, left */
   padding-top: 62px;
 }
 
@@ -271,6 +272,7 @@ header {
      section.products-section
      {
         max-width:1236px;
+        /* height: 1084px; */
         margin: 0px auto;
         margin-top: 56px;
         background-color: white;
@@ -706,11 +708,11 @@ header {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
-    position: static;
+    position: static; /* ❌ bỏ absolute parent */
   }
 
   .pt-setup img {
-    position: static !important; 
+    position: static !important; /* ❌ bỏ absolute cho từng ảnh */
     width: 30%;   /* 3 cột */
     height: auto;
     margin: 0 !important;
@@ -2020,7 +2022,7 @@ label {
   }
 
   .contact-form-btn {
-    width: 100%; 
+    width: 100%; /* full chiều rộng để dễ bấm */
     height: 50px;
     font-size: 14px;
   }
